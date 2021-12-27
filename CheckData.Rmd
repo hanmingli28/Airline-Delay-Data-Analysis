@@ -1,0 +1,31 @@
+---
+title: "CheckData"
+author: "Hanming Li"
+date: "2021/11/23"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+df <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/al_perf.csv')
+airline_ID <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/L_AIRLINE_ID.csv')
+airport <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/L_AIRPORT.csv')
+airport_ID <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/L_AIRPORT_ID.csv')
+cancel <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/L_CANCELATION.csv')
+distance <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/L_DISTANCE_GROUP_250.csv')
+week <- read.csv(file = 'D:/GU/School Work/Fall 21/ANLY 640/HW/4/data/L_WEEKDAYS.csv')
+```
+```{r}
+glimpse(df)
+head(df)
+head(airline_ID)
+head(airport)
+head(airport_ID)
+head(cancel)
+head(distance)
+head(week)
+```
+```{r}
+print(airport)
+airport_ID
+```
